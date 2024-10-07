@@ -1,0 +1,43 @@
+@import '../../../variables.scss';
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: $primary-color;
+  color: $white-color;
+  font-family: $default-font;
+
+  .header-nav {
+    .nav-list {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+
+      .nav-item {
+        .nav-link {
+          color: $white-color;
+          text-decoration: none;
+          margin: 0 1rem;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .auth-links {
+    .auth-link {
+      color: $white-color;
+      text-decoration: none;
+      margin: 0 1rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
